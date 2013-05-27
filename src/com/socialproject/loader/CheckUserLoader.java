@@ -50,7 +50,8 @@ public class CheckUserLoader extends AsyncTaskLoader<User> {
 	public void deliverResult(User data) {
 
 		User us = data;
-		us.getClass();
+		
+		
 		super.deliverResult(data);
 	}
 
