@@ -22,6 +22,18 @@ public class User extends Model {
 
 	}
 
+	/*
+	 * create a user object from the json string
+	 */
+	public User(JSONObject jsonObject) throws JSONException {
+
+		this.username = jsonObject.getString("username");
+		this.password = jsonObject.getString("password");
+	}
+
+	public User() {
+	}
+
 	@Override
 	public int describeContents() {
 		return 0;
