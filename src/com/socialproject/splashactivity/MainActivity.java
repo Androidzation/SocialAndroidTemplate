@@ -18,12 +18,15 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		SplashFragment mSplashFragment = new SplashFragment();
-		FragmentManager mFragmentManager = getSupportFragmentManager();
-		FragmentTransaction mFt = mFragmentManager.beginTransaction();
+		if (savedInstanceState == null) {
 
-		mFt.add(R.id.realcontent, mSplashFragment);
-		mFt.commit();
+			SplashFragment mSplashFragment = new SplashFragment();
+			FragmentManager mFragmentManager = getSupportFragmentManager();
+			FragmentTransaction mFt = mFragmentManager.beginTransaction();
+
+			mFt.add(R.id.realcontent, mSplashFragment);
+			mFt.commit();
+		}
 	}
 
 }

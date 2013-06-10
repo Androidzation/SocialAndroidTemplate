@@ -22,8 +22,6 @@ public class CheckUserLoader extends AsyncTaskLoader<User> {
 
 	@Override
 	protected void onStartLoading() {
-		// TODO Auto-generated method stub
-
 		forceLoad();
 	}
 

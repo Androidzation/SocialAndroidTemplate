@@ -4,5 +4,8 @@
     <string name="app_name">SocialAndroidTemplate</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="login_with_facebook">Login With Facebook</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
 
 </resources>
